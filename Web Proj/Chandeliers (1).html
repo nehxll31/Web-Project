@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Chandeliers.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castle Designers.</title>
+    <link rel="icon" href="new2.png" type="image" />
+</head>
+<body>
+<hr />
+      <h2>|CA𝕊TLΣ DE𝕊IGNΣR𝕊|<br /></h2>
+      <h4>------BE$T IN TOWN------</h4>
+<h1 class="Page_Title">CHANDELIERS</h1>
+<button type="submit" class="Submit_Your_Choices">SUBMIT YOUR CHOICES</button>
+<div id="Candle_Chandeliers" class="Interior_Design_Options">
+<img src="Candle_Chandeliers.avif" width="500" height="263" alt="Candle_Chandeliers">
+<h1 class="Image_Captions">Candle Chandeliers</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Candle_Chandeliers')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Candle_Chandeliers');">More details</button>
+<p class="Description">The granddaddy of it all, a candle chandelier takes the decoration back to its roots. These types of chandeliers often have at least five extensions, each with its own candle-like light at the end.</p>
+</div>
+<div id="Crystal_Chandeliers" class="Interior_Design_Options">
+<img src="Crystal_Chandeliers.avif" width="500" height="263" alt="Crystal_Chandeliers">
+<h1 class="Image_Captions">Crystal Chandeliers</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Crystal_Chandeliers')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Crystal_Chandeliers');">More details</button>
+<p class="Description">A very broad style of chandelier, crystal chandeliers were named after the materials they were made from. A crystal chandelier can take many different forms. These are the types of chandeliers to buy if you're going for a look of pure elegance.</p>
+</div>
+<div id="Glass_Chandeliers" class="Interior_Design_Options">
+<img src="Glass_Chandeliers.avif" width="500" height="263" alt="Glass_Chandeliers">
+<h1 class="Image_Captions">Glass Chandeliers</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Glass_Chandeliers')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Glass_Chandeliers');">More details</button>
+<p class="Description">Glass Chandeliers or Glass Tube Chandeliers are made of glass and are known for their diversity. Glass Chandeliers fit into rooms of any size and shape.</p>
+</div>
+<script>
+function display(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML== "More details"){
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="block";
+document.getElementById(ID_Name).style.height="500px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="Less details";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="none";
+document.getElementById(ID_Name).style.height="410px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="More details";
+}
+}
+function Select_Preferences(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML== "Add to The Preferences List"){
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="green";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Deselect the Preference";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="transparent";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Add to The Preferences List";
+}
+}
+</script>
+</body>
+</html>

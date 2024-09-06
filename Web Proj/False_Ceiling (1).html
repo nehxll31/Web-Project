@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="False_Ceiling.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castle Designers.</title>
+    <link rel="icon" href="new2.png" type="image" />
+</head>
+<body>
+<hr />
+      <h2>|CA𝕊TLΣ DE𝕊IGNΣR𝕊|<br /></h2>
+      <h4>------BE$T IN TOWN------</h4>
+<h1 class="Page_Title">FALSE CEILINGS</h1>
+<button type="submit" class="Submit_Your_Choices">SUBMIT YOUR CHOICES</button>
+<div id="Plaster_Of_Paris_False_Ceiling" class="Interior_Design_Options">
+<img src="Plaster_Of_Paris_False_Ceiling.jpg" width="500" height="263" alt="Plaster_Of_Paris_False_Ceiling">
+<h1 class="Image_Captions">Plaster of Paris False Ceiling</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Plaster_Of_Paris_False_Ceiling')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Plaster_Of_Paris_False_Ceiling');">More details</button>
+<p class="Description">The Plaster of Paris false ceilings have a high durability and can be shaped and designed as per the requirements.</p>
+</div>
+<div id="Wooden_False_Ceiling" class="Interior_Design_Options">
+<img src="Wooden_False_Ceiling.avif" width="500" height="263" alt="Wooden_False_Ceiling">
+<h1 class="Image_Captions">Wooden False Ceiling</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Wooden_False_Ceiling')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Wooden_False_Ceiling');">More details</button>
+<p class="Description">Wood is often used in false ceiling designs due to its natural patterns and textures. Wooden false ceiling gives a warm and rustic look to your room interior. Wooden panels come in the form of hollow blocks, panels, or boards, and plywood.</p>
+</div>
+<div id="Fibre_False_Ceiling" class="Interior_Design_Options">
+<img src="Fibre_False_Ceiling.jpg" width="500" height="263" alt="Fibre_False_Ceiling">
+<h1 class="Image_Captions">Fibre False Ceiling</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Fibre_False_Ceiling')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Fibre_False_Ceiling');">More details</button>
+<p class="Description">Fibre false ceiling is gaining its popularity due to low cost and easy installation process. Fibre ceilings are always in high demand in commercial applications like showrooms etc.</p>
+</div>
+<script>
+function display(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML== "More details"){
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="block";
+document.getElementById(ID_Name).style.height="500px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="Less details";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="none";
+document.getElementById(ID_Name).style.height="410px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="More details";
+}
+}
+function Select_Preferences(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML== "Add to The Preferences List"){
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="green";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Deselect the Preference";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="transparent";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Add to The Preferences List";
+}
+}
+</script>
+</body>
+</html>

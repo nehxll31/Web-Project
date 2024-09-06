@@ -1,0 +1,210 @@
+body {
+  margin-inline: auto;
+  padding: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: repeat(auto);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://plus.unsplash.com/premium_photo-1661962952618-031d218dd040?q=80&w=3777&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.Page_Title {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 0 15px orange;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+.Page_Title::first-letter {
+  color: orange;
+}
+h2 {
+  position: absolute;
+  left: 54px;
+  top: 0px;
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 4px;
+  animation-name: Pop;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 2;
+}
+h2:hover {
+  text-shadow: 5px 0px 5px orangered, -5px -0px 5px orange;
+}
+#Welcome_tag{
+	color: #ffffff;
+	position: absolute;
+	letter-spacing: 10px;
+	top: 0px;
+	left: 900px;
+}
+#Welcome_tag::first-letter {
+  color: orange;
+}
+h4 {
+  color: #ffffff;
+  position: relative;
+  letter-spacing: 10px;
+  left: 51px;
+  top: 40px;
+}
+hr {
+  margin: 0 55px;
+  position: relative;
+  top: 110px;
+}
+.Add_to_The_Preferences_List{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ position: absolute;
+  font-weight: 700;
+  top: 350px;
+  left: 20px;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  color: black;
+  border: solid orange;
+  border-width: 4px;
+  border-radius: 25px;
+}
+.Add_to_The_Preferences_List:hover {
+  color: black;
+  cursor: pointer;
+  border: none;
+  background-color: orange;
+  transform: scale(1.1);
+  letter-spacing: 1.1px;
+  box-shadow: 0 0 25px orange;
+  transition: 0.5s;
+}
+.More_Details{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ position: absolute;
+  font-weight: 700;
+  top: 350px;
+  left: 300px;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  color: black;
+  border: solid orange;
+  border-width: 4px;
+  border-radius: 25px;
+}
+.More_Details:hover {
+  color: black;
+  cursor: pointer;
+  border: none;
+  background-color: orange;
+  transform: scale(1.1, 1.1);
+  letter-spacing: 1.1px;
+  box-shadow: 0 0 10px orange;
+  transition: 0.5s ease;
+}
+.Submit_Your_Choices{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ position: absolute;
+  font-weight: 700;
+  top: 150px;
+  left: 1200px;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border: solid orange;
+  border-width: 4px;
+  border-radius: 25px;
+animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+.Submit_Your_Choices:hover{
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: orange;
+  transform: scale(1.1, 1.1);
+  letter-spacing: 1.1px;
+  box-shadow: 0 0 10px orange;
+  transition: 0.5s ease;
+}
+#Candle_Chandeliers{
+position: absolute;
+top: 250px;
+left: 30px;
+height: 410px;
+width: 500px;
+background-color: white;
+animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+#Crystal_Chandeliers{
+position: absolute;
+top: 250px;
+left: 550px;
+height: 410px;
+width: 500px;
+background-color: white;
+animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+#Glass_Chandeliers{
+position: absolute;
+top: 250px;
+left: 1070px;
+height: 410px;
+width: 500px;
+background-color: white;
+animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+.Description{
+position: absolute;
+top: 400px;
+display: none;
+}
+.Image_Captions{
+text-align: center;
+}
+@keyframes slideInTop {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(2, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

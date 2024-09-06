@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Furniture.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castle Designers.</title>
+    <link rel="icon" href="new2.png" type="image" />
+</head>
+<body>
+<hr />
+      <h2>|CA𝕊TLΣ DE𝕊IGNΣR𝕊|<br /></h2>
+      <h4>------BE$T IN TOWN------</h4>
+<h1 class="Page_Title">FURNITURE</h1>
+<button type="submit" class="Submit_Your_Choices">SUBMIT YOUR CHOICES</button>
+<div id="Scandinavian_furniture" class="Interior_Design_Options">
+<img src="Scandinavian_Furniture.avif" width="500" height="263" alt="Scandinavian_furniture">
+<h1 class="Image_Captions">Scandinavian furniture</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Scandinavian_furniture')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Scandinavian_furniture');">More details</button>
+<p class="Description">Scandinavian style furniture is minimalist and practical. Designers often use only solid wood to craft chair, tables, and other furniture items with a Nordic style. Natural materials like leather, linen, and Kvadrat textiles complement wood surfaces.</p>
+</div>
+<div id="Modern_furniture" class="Interior_Design_Options">
+<img src="Modern_furniture.avif" width="500" height="263" alt="Modern_furniture">
+<h1 class="Image_Captions">Modern furniture</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Modern_furniture')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Modern_furniture');">More details</button>
+<p class="Description">Modern furniture typically features simple, basic shapes like squares, rectangles, and circles. Pieces are often designed to fit together like a puzzle, making them aesthetically pleasing as well as functional.</p>
+</div>
+<div id="Rustic_furniture" class="Interior_Design_Options">
+<img src="Rustic_Furniture.avif" width="500" height="263" alt="Rustic_furniture">
+<h1 class="Image_Captions">Rustic furniture</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Rustic_furniture')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Rustic_furniture');">More details</button>
+<p class="Description">Rustic design is a style that's natural, aged, organic, and maybe even a little distressed. Design styles like farmhouse, Tuscan, or coastal can also be described as rustic. Rustic is the opposite of modern or contemporary design</p>
+</div>
+<script>
+function display(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML== "More details"){
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="block";
+document.getElementById(ID_Name).style.height="500px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="Less details";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="none";
+document.getElementById(ID_Name).style.height="410px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="More details";
+}
+}
+function Select_Preferences(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML== "Add to The Preferences List"){
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="green";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Deselect the Preference";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="transparent";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Add to The Preferences List";
+}
+}
+</script>
+</body>
+</html>

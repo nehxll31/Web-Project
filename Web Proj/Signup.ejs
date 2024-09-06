@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <script src="Signup.js"></script>
+    <link rel="stylesheet" href="signup.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Designers | Sign Up Page</title>
+    <link rel="icon" href="logo.png" type="image">
+    
+</head>
+<body>
+    
+    <h2><a href="Interior.html" class="main">|CA𝕊TLE DE𝕊IGNER𝕊|</a><br /></h2>
+    <h4>------WORTH YOUR WHILE------</h4>
+    <h3>Or Continue with,</h3><hr style="position: relative;top: 310px;right:400px ; width:400px;">
+    <form action="http://localhost:3000/" onsubmit="return checkPassword()" method="post">
+        <ion-icon name="close-circle-outline" onclick="return c()"></ion-icon>
+        <div class="inputs">
+        <h2 style="color:black">SIGN UP</h2>
+        <ion-icon name="person"></ion-icon>
+        <br><input type="text" id="fname"  maxlength="40" placeholder="Name" name="Name" onclick="focus()"><br>
+        <ion-icon name="mail"></ion-icon>
+        <br><input type="email" id="email" placeholder="Email" name="Email"><br>
+        <ion-icon name="call"></ion-icon>
+        <br><input type="text" id="contactno" placeholder="Phone Number" maxlength="10" name="Contact_Number" ><br>
+        <ion-icon name="key" onclick="return showset()"></ion-icon>
+        <br><input type="password" id="set" placeholder="Set password" name="Set_Password"> <br>
+        <ion-icon name="eye" onclick="show()"></ion-icon>
+        <br><input type="password" id="confirm" placeholder="Confirm password" name="Confirm_Password"><br><br>
+   <h2 id="Passwords_do_not_match">nsuidnfusifnudnidfnisd</h2>
+        <span id="span" style="font-size: large;font-weight: 700;font-size: 20px;"></span><br><br>
+        <ion-icon name="log-in" style="position:absolute;top:535px;right:160px;"></ion-icon>
+        <input type="submit" id="signup" value="Sign up"> 
+        </div>     
+        <h5>Already have an account?<a href="loginbutton.html" class="log"> Log In</a></h5>
+        </form>
+    <ul>
+        <li><a href="https://accounts.google.com"><img src="https://www.pngitem.com/pimgs/m/107-1071787_google-brand-black-google-logo-vector-hd-png.png" id="s"></a></li>
+        <li><a href='https://www.facebook.com/'><img src="data:image/png;base64,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" id="s"></a></li>
+        <li><a href="https://twitter.com/login?lang=en"><img src="https://thumbs.dreamstime.com/b/black-white-twitter-logo-icon-high-resolution-black-white-twitter-logo-white-background-vector-eps-file-available-175771728.jpg" id="s"></a></li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+	let sent="<%-messagedata.sent%>";
+	if(sent=="True"){
+		alert("<%-messagedata.message%>");
+	}
+	else
+	{
+		document.getElementById("Passwords_do_not_match").innerHTML="<%-messagedata.message%>";
+	}
+</script>   
+</body>
+</html>

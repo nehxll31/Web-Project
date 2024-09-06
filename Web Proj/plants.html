@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="plants.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castle Designers.</title>
+    <link rel="icon" href="new2.png" type="image" />
+</head>
+<body>
+<hr />
+      <h2>|CA𝕊TLΣ DE𝕊IGNΣR𝕊|<br /></h2>
+      <h4>------BE$T IN TOWN------</h4>
+<h1 class="Page_Title">INDOOR PLANTS</h1>
+<button type="submit" class="Submit_Your_Choices">SUBMIT YOUR CHOICES</button>
+<div id="Snake_plant" class="Interior_Design_Options">
+<img src="Snake_plant.avif" width="500" height="263" alt="Snake_plant">
+<h1 class="Image_Captions">Snake plant</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Snake_plant')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Snake_plant');">More details</button>
+<p class="Description">The snake plant, commonly referred to as mother-in-law's tongue, is a resilient succulent that can grow anywhere between 6 inches to several feet.</p>
+</div>
+<div id="Aloe_vera" class="Interior_Design_Options">
+<img src="Aloe_vera_plant.avif" width="500" height="263" alt="Aloe_vera">
+<h1 class="Image_Captions">Aloe vera</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Aloe_vera')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Aloe_vera');">More details</button>
+<p class="Description">The botanical name of Aloe vera is Aloe barbadensis miller. It belongs to Asphodelaceae (Liliaceae) family, and is a shrubby or arborescent, perennial, xerophytic, succulent, pea- green color plant.</p>
+</div>
+<div id="Peace_lily" class="Interior_Design_Options">
+<img src="peace_lily.avif" width="500" height="263" alt="Peace_lily">
+<h1 class="Image_Captions">Peace lily</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Peace_lily')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Peace_lily');">More details</button>
+<p class="Description">Peace lilies are sturdy, easy to grow plants with glossy, dark green oval leaves that narrow to a point. The leaves rise directly from the soil. These plants also periodically produce lightly fragrant white flowers that resemble calla lilies. </p>
+</div>
+<script>
+function display(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML== "More details"){
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="block";
+document.getElementById(ID_Name).style.height="500px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="Less details";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="none";
+document.getElementById(ID_Name).style.height="410px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="More details";
+}
+}
+function Select_Preferences(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML== "Add to The Preferences List"){
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="green";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Deselect the Preference";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="transparent";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Add to The Preferences List";
+}
+}
+</script>
+</body>
+</html>

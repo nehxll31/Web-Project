@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", Tahoma, Geneva, Verdana, sans-serif;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url();
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2,
+h4 {
+  margin: 10px 0px;
+  position: relative;
+  left: 25px;
+  font-family: "henny penny", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px orange;
+  color: #fff;
+}
+::placeholder {
+  font-family: poppins;
+  color: #777777;
+}
+a {
+  text-decoration: none;
+  color: #f9ab01;
+}
+
+hr {
+  margin: 0 60px;
+}
+h5 {
+  position: relative;
+  right: 52px;
+  top: 45px;
+  color: #fff;
+}
+a.sign {
+  color: orange;
+  text-decoration: none;
+}
+form.main {
+  background-attachment: scroll;
+  position: relative;
+  top: -40px;
+  left: 700px;
+  box-shadow: 0 0;
+}
+h3 {
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  top: 60px;
+  left: -17px;
+}
+#Back_Button{
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  top: 60px;
+  left: 15px;
+}
+ion-icon {
+  color: #777777;
+  position: relative;
+  z-index: 1;
+  top: 35px;
+  left: 210px;
+  scale: 2;
+}
+::placeholder {
+  inherits: always;
+}
+#usn {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  right: 700px;
+  border: solid #ececed;
+  width: 340px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#usn:focus {
+  transform: scale(1.1, 1.1);
+  transition: 1s;
+  outline: none;
+}
+#psd {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  right: 700px;
+  border: solid #ececed;
+  width: 340px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #000000;
+}
+#psd:focus {
+  outline: none;
+}
+#cb,
+label {
+  scale: 1.5;
+  position: relative;
+  bottom: 30px;
+}
+#submit {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  top: 35px;
+  right: 230px;
+  background: transparent;
+  border: solid orange;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 500;
+}
+#submit:hover {
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(to right, orangered, orange);
+  transition: 1s;
+  transform: scale(1.1, 1.1);
+}
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 50px 0 0;
+}
+#Error_message{
+font-family: "poppins", Tahoma, Geneva, Verdana, sans-serif;
+position: absolute;
+top:50px;
+left: 500px;
+}

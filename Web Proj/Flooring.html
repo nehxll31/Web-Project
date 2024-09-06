@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Flooring.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castle Designers.</title>
+    <link rel="icon" href="new2.png" type="image" />
+</head>
+<body>
+<hr />
+      <h2>|CA𝕊TLΣ DE𝕊IGNΣR𝕊|<br /></h2>
+      <h4>------BE$T IN TOWN------</h4>
+<h1 class="Page_Title">FLOORING</h1>
+<button type="submit" class="Submit_Your_Choices">SUBMIT YOUR CHOICES</button>
+<div id="Hardwood_Flooring" class="Interior_Design_Options">
+<img src="Hardwood_Flooring.avif" width="500" height="263" alt="Hardwood_Flooring">
+<h1 class="Image_Captions">Hardwood Flooring</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Hardwood_Flooring')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Hardwood_Flooring');">More details</button>
+<p class="Description">Hardwood Flooring is made from a single piece of solid wood, which is about 18-20mm thick. This solid wood may be from oak, cherry, or walnut.
+Hardwood flooring is simply installed by nailing the solid wood to a wooden subfloor.</p>
+</div>
+<div id="Carpet_Flooring" class="Interior_Design_Options">
+<img src="Carpet_Flooring.avif" width="500" height="263" alt="Carpet_Flooring">
+<h1 class="Image_Captions">Carpet Flooring</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Carpet_Flooring')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Carpet_Flooring');">More details</button>
+<p class="Description">Wool carpets have a higher ability to resist moisture and stain, unlike other types. Nylon carpets can be easily recycled. Carpets made from acrylic are resistant to mildew, insects, and crushing. Polyester carpets are moisture resistant but vulnerable to stain.</p>
+</div>
+<div id="Marble_Flooring" class="Interior_Design_Options">
+<img src="Marble_Flooring.avif" width="500" height="263" alt="Marble_Flooring">
+<h1 class="Image_Captions">Marble Flooring</h1>
+<button class="Add_to_The_Preferences_List" onclick="Select_Preferences('Marble_Flooring')">Add to The Preferences List</button>
+<button class="More_Details" onclick="display('Marble_Flooring');">More details</button>
+<p class="Description">Marble flooring is known as the most luxurious among prominent flooring types; it is elegant, neat, durable, and -most importantly- very versatile. It comes in various color options; beige, black, green, pink, brown, red, blue, and gold.</p>
+</div>
+<script>
+function display(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML== "More details"){
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="block";
+document.getElementById(ID_Name).style.height="500px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="Less details";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Description")[0].style.display="none";
+document.getElementById(ID_Name).style.height="410px";
+document.getElementById(ID_Name).getElementsByClassName("More_Details")[0].innerHTML="More details";
+}
+}
+function Select_Preferences(ID_Name){
+if(document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML== "Add to The Preferences List"){
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="green";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Deselect the Preference";
+}
+else{
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].style.backgroundColor="transparent";
+document.getElementById(ID_Name).getElementsByClassName("Add_to_The_Preferences_List")[0].innerHTML="Add to The Preferences List";
+}
+}
+</script>
+</body>
+</html>
